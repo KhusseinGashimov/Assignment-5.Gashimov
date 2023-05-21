@@ -13,5 +13,10 @@ public class Main {
 
         System.out.println("Key 111: " + bst.get(111));
 
+        bst.delete(789);
+
+        System.out.println("Size: " + bst.size());
+
+
     }
 }
