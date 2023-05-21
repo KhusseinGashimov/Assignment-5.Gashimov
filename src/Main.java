@@ -10,6 +10,8 @@ public class Main {
         bst.put(45, "Value 45");
         bst.put(789, "Value 789");
         bst.put(43, "Value 43");
+        bst.put(675, "Value 675");
+        bst.put(1123, "Value 1123");
 
         System.out.println("Key 111: " + bst.get(111));
 
@@ -17,6 +19,10 @@ public class Main {
 
         System.out.println("Size: " + bst.size());
 
+        System.out.println("Keys in ascending order:");
+        for (Integer key : bst.iterator()) {
+            System.out.println(key);
+        }
 
     }
 }
