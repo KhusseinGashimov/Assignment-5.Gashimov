@@ -11,5 +11,7 @@ public class Main {
         bst.put(789, "Value 789");
         bst.put(43, "Value 43");
 
+        System.out.println("Key 111: " + bst.get(111));
+
     }
 }
