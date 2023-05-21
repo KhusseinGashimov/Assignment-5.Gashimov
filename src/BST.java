@@ -104,4 +104,21 @@ public class BST<K extends Comparable<K>, V> {
     }
 
 
+    // Returns an iterator for the binary search tree that iterates through the keys in ascending order
+    public Iterable<K> iterator() {
+        List<K> keys = new ArrayList<>();
+        inorderTraversal(root, keys);
+        return keys;
+    }
+    // Performs an inorder traversal of the binary search tree and adds the keys to the list
+
+    private void inorderTraversal(Node node, List<K> keys) {
+        if (node == null)
+            return;
+        inorderTraversal(node.left, keys); // Traverse left subtree
+        keys.add(node.key); // Add current node's key to the list
+        inorderTraversal(node.right, keys); // Traverse right subtree
+    }
+
+
 }
